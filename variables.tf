@@ -6,6 +6,12 @@ variable "app" {
   description = "Name of application"
   type        = string
 }
+
+variable "azure_region" {
+  description = "Region where database is deployed."
+  type        = string
+}
+
 variable "resource_group_name" {
   description = "Name of the application ressource group, herited from infra module"
   type        = string

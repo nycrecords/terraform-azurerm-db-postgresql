@@ -1,0 +1,26 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+ipdb = "*"
+black = "*"
+
+[packages]
+ansible = "*"
+awscli = "*"
+boto = "*"
+requests = "*"
+ansible-cmdb = "*"
+ansible-lint = "*"
+bracex = "*"
+
+[requires]
+python_version = "3.8.3"
+
+[pipenv]
+allow_prereleases = true
+
+[scripts]
+generate-cmdb = "./generate-cmdb"
