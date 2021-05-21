@@ -18,7 +18,6 @@ resource "azurerm_postgresql_server" "postgresql_server" {
   tags = merge(
     {
       "env"   = var.environment
-      "stack" = var.stack
     },
     var.extra_tags,
   )

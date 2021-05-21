@@ -1,18 +1,11 @@
-variable "client_name" {
-  description = "Name of client"
-  type        = string
-}
-
 variable "environment" {
   description = "Name of application's environnement"
   type        = string
 }
-
-variable "stack" {
-  description = "Name of application stack"
+variable "app" {
+  description = "Name of application"
   type        = string
 }
-
 variable "resource_group_name" {
   description = "Name of the application ressource group, herited from infra module"
   type        = string
@@ -20,11 +13,6 @@ variable "resource_group_name" {
 
 variable "location" {
   description = "Azure location for Key Vault."
-  type        = string
-}
-
-variable "location_short" {
-  description = "Short string for Azure location."
   type        = string
 }
 
